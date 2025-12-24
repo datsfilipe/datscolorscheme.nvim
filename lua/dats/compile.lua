@@ -64,6 +64,7 @@ function M.generate(palette)
     Include = c.keyword,
     StorageClass = c.keyword,
 
+    Special = c.value,
     Type = c.type,
     Structure = c.type,
     Typedef = c.type,
@@ -83,11 +84,12 @@ function M.generate(palette)
     ['@variable'] = c.variable,
     ['@variable.builtin'] = c.variable,
     ['@variable.member'] = c.variable,
+    ['@variable.parameter'] = c.variable,
+
     ['@module'] = c.variable,
     ['@namespace'] = c.variable,
 
-    ['@variable.parameter'] = c.variable,
-
+    ['@module.builtin'] = c.variable,
     ['@function'] = c.def,
     ['@function.call'] = c.call,
     ['@function.builtin'] = c.call,
